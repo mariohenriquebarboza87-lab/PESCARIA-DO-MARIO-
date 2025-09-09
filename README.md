@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesca do Mário 🎣</title>
+  <style>
+    /* ======== RESET ======== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8fbfd;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* ======== CABEÇALHO ======== */
+    header {
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      color: white;
+      text-align: center;
+      padding: 40px 20px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    header img {
+      width: 100px;
+      margin-bottom: 15px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: opacity 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    /* ======== CONTAINER ======== */
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+      padding: 25px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    }
+
+    section h2 {
+      color: #0077b6;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #90e0ef;
+      padding-bottom: 5px;
+    }
+
+    p, li {
+      font-size: 1rem;
+    }
+
+    /* ======== LISTAS DE DICAS ======== */
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      background: #e0f7fa;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+    }
+
+    /* ======== GALERIA ======== */
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .galeria img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    /* ======== RODAPÉ ======== */
+    footer {
+      background: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======== CABEÇALHO ======== -->
+  <header>
+    <!-- Mascote Peixe-Gato (SVG estilizado) -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Catfish_icon.svg/512px-Catfish_icon.svg.png" alt="Peixe-gato">
+    <h1>Pesca do Mário 🎣</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#contos">Contos</a>
+      <a href="#dicas">Dicas</a>
+      <a href="#galeria">Galeria</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- HOME -->
+    <section id="home">
+      <h2>Bem-vindo!</h2>
+      <p>
+        Eu sou o <strong>Mário</strong>, pescador de teimosia e apaixonado por cada momento à beira da água.  
+        Esse é meu espaço para compartilhar histórias, dicas e fotos da minha vida de pescador.  
+        Seja em rios, lagos, pesqueiros livres ou até em aquário, sempre tem uma boa pescaria esperando!
+      </p>
+    </section>
+
+    <!-- CONTOS -->
+    <section id="contos">
+      <h2>📖 Contos & Causos</h2>
+      <p>
+        Toda pescaria rende histórias: do peixe que escapou até aquele troféu que entrou pra galeria!  
+        Aqui você encontra os relatos mais recentes das minhas aventuras.
+      </p>
+      <p><em>(Adicione aqui o primeiro causo da sua pescaria!)</em></p>
+    </section>
+
+    <!-- DICAS -->
+    <section id="dicas">
+      <h2>💡 Dicas Semanais</h2>
+      <ul>
+        <li>Curimbas e piaparas adoram milho de saquinho ou massa doce com mel.</li>
+        <li>Prefira anzóis menores para peixes de boca fina como tilápia.</li>
+        <li>Leve sempre linha reserva — nunca se sabe quando a briga será maior!</li>
+      </ul>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria">
+      <h2>📸 Galeria de Fotos</h2>
+      <div class="galeria">
+        <img src="https://picsum.photos/500/300?random=11" alt="Pescaria 1">
+        <img src="https://picsum.photos/500/300?random=12" alt="Pescaria 2">
+        <img src="https://picsum.photos/500/300?random=13" alt="Pescaria 3">
+        <img src="https://picsum.photos/500/300?random=14" alt="Pescaria 4">
+      </div>
+      <p><em>(Substitua essas fotos pelas suas capturas reais)</em></p>
+    </section>
+  </div>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>© 2025 Pesca do Mário 🎣 | Inspirado pelo rio, guiado pela teimosia</p>
+  </footer>
+
+</body>
+</html>
